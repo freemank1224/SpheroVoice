@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.petermenke.spherovoice.MainActivity"
+    tools:showIn="@layout/activity_main">
+
+
+    <TextView
+        android:text="Status Log"
+        android:layout_width="249dp"
+        android:layout_height="29dp"
+        android:id="@+id/title"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginStart="16dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintTop_toBottomOf="@+id/fab2" />
+
+    <TextView
+        android:layout_width="314dp"
+        android:layout_height="251dp"
+        android:id="@+id/textView1"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginStart="16dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:textAlignment="textStart"
+        android:fadeScrollbars="true"
+        android:scrollIndicators="right"
+        android:scrollbars="vertical"
+        app:layout_constraintTop_toBottomOf="@+id/title" />
+
+    <ProgressBar
+        style="?android:attr/progressBarStyleSmall"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:id="@+id/progressBar2"
+        android:elevation="20dp"
+        app:layout_constraintTop_toTopOf="@+id/fab2"
+        app:layout_constraintBottom_toBottomOf="@+id/fab2"
+        app:layout_constraintRight_toRightOf="@+id/fab2"
+        app:layout_constraintLeft_toLeftOf="@+id/fab2" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:clickable="true"
+        app:fabSize="mini"
+        android:id="@+id/fab2"
+        android:layout_marginTop="40dp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginStart="16dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:backgroundTint="@android:color/holo_orange_dark" />
+
+</android.support.constraint.ConstraintLayout>
