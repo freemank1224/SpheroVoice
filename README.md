@@ -1,4 +1,4 @@
-=SpheroVoice=
+# SpheroVoice
 
 This is a proof of concept voice command app for the Sphero, specifically the SPRK+. I have not tested any other systems.
 
